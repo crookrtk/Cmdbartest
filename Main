@@ -27,4 +27,4 @@ if err then
 
         :expect()
 end
-warn("Homebrew loaded in " ..string.format("%.2f", os.clock() - start))
+warn("Anarkys v3 loaded in " ..string.format("%.2f", os.clock() - start))
