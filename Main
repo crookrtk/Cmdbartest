@@ -6,7 +6,7 @@ local start = os.clock()
 local succ,err = pcall(function()
 local rbxmSuite = loadstring(game:HttpGetAsync("https://github.com/richie0866/rbxm-suite/releases/latest/download/rbxm-suite.lua"))()
 
-local path = rbxmSuite.download("Syntaxx64/HomebrewAdmin@latest", "Homebrew.rbxm")
+local path = rbxmSuite.download("crookrtk/Cmdbartest@latest", "Homebrew.rbxm")
 -- Download the latest RBXM
 rbxmSuite.launch(path, {
     runscripts=true,
@@ -18,7 +18,7 @@ rbxmSuite.launch(path, {
 end)
 if err then
     local Rostruct = loadstring(game:HttpGetAsync("https://github.com/richie0866/Rostruct/releases/download/v1.1.11/Rostruct.lua"))()
-    Rostruct.fetchLatest("Syntaxx64", "HomebrewAdmin")
+    Rostruct.fetchLatest("crookrtk", "Cmdbartest")
         :andThen(function(pkg)
             pkg:build("src/")
             pkg:start()
